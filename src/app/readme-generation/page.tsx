@@ -1,18 +1,18 @@
-import RepositorySummaryForm from '@/components/feature-forms/repository-summary-form';
+import ReadmeGenerationForm from '@/components/feature-forms/readme-generation-form';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 
-export default function RepositorySummaryPage() {
+export default function ReadmeGenerationPage() {
   return (
     <div className="container mx-auto py-8">
       <Card className="shadow-xl">
         <CardHeader>
-          <CardTitle className="font-headline text-3xl">Repository Summary</CardTitle>
+          <CardTitle className="font-headline text-3xl">README Generation</CardTitle>
           <CardDescription className="font-body">
-            Enter a GitHub repository URL to get an AI-generated summary of its purpose and structure.
+            Generate a README file for your codebase based on its description, file structure, and comments.
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <RepositorySummaryForm />
+          <ReadmeGenerationForm />
         </CardContent>
       </Card>
     </div>
